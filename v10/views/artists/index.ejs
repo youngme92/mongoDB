@@ -1,0 +1,21 @@
+<%- include ("../partials/header") %>
+<div class="container">
+    <header class="jumbotron">
+        <h1>HotArtists List</h1>
+        <p>View our hand-picked Artist</p>
+        <a class="btn btn-primary" href="/index/newArtist">Who is a new HotArtist</a>
+    </header>
+    <div class="row">
+    <% artists.forEach(function(element){ %>
+        <div class="col-md-3 col-sm-6 col-6">
+                <img class="img-thumbnail" src="<%= element.url %>">
+                <div class="caption">
+                    <strong><%= element.name %></strong> 
+                    
+                </div>
+                <a href="/index/<%= element._id %>" class="btn btn-primary">more info</a>
+        </div>
+    <% }) %>
+    </div>
+</div>
+<%- include ("../partials/footer") %>

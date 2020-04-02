@@ -1,0 +1,12 @@
+.main {
+    margin-top: 100px;
+}
+
+.comment {
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+#delete_form {
+    display : inline;
+}
